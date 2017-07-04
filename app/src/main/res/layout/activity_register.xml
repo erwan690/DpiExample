@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="studio.akse.dpiexample.RegisterActivity">
+
+    <TextView
+        android:id="@+id/berhasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/berhasil"
+        android:textSize="@dimen/teksna"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/scrolna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Fullname"
+            android:textSize="@dimen/teksna"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Place of Birth"
+            android:textSize="@dimen/teksna"/>
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            style="@android:style/Widget.Holo.Spinner"
+            android:hint="MM / DD / YYYY"
+            android:textSize="@dimen/teksna"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Home Address"
+                android:textSize="@dimen/teksna"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Email"
+                android:textSize="@dimen/teksna"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cell phone"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/teksna"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PT DPI Numbers"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/teksna"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/uploadphoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:textAppearanceSmall"
+                android:text="Photo"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imagena"
+                android:layout_gravity="center_vertical|clip_horizontal"
+                android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/submitregister"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_gravity="center"/>
+</LinearLayout>

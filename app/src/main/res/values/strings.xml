@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Dpi Example</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Form Tidak Boleh Kosong</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="resetna">Silahkan cek email anda untuk mendapkan password baru</string>
+    <string name="berhasil"> Thank you. \n Your registration is being processed \n You may sign in to your account \n once it has been approved by the administrator. </string>
+    <string name="forget">Forget Password ?</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dummyhome">DPI - PAY </string>
+    <string name="dummyhome2">Outstanding Transfer Rp 20.000.000</string>
+    <string name="totalcom">Total commited : Rp.30000000</string>
+    <string name="totaltrf">Total transfer : Rp.10000000</string>
+
+</resources>
