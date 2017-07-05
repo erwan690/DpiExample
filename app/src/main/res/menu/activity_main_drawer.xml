@@ -31,7 +31,7 @@
     <item android:title="Menu">
         <menu>
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_logout"
                 android:title="Logout" />
         </menu>

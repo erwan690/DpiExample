@@ -48,21 +48,25 @@
                     android:padding="5dp">
 
                     <TextView
+                        android:id="@+id/depok"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="DEPOK project, posted by admin 8 hours go" />
 
                     <TextView
+                        android:id="@+id/jakarta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="JAKARTA project, posetd by admin yesterday" />
 
                     <TextView
+                        android:id="@+id/bandung"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="BANDUNG project, posted by admin 30/06/2017" />
 
                     <TextView
+                        android:id="@+id/semarang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="SEMARANG 2 project, posted by admin 25/06/2017" />

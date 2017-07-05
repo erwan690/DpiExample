@@ -1,7 +1,6 @@
 package studio.akse.dpiexample;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -111,6 +110,11 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_land:
                 Intent land = new Intent(MainActivity.this,LandActivity.class);
                 startActivity(land);
+                break;
+            case R.id.nav_logout:
+                Intent logout = new Intent(MainActivity.this, SplashActivity.class);
+                startActivity(logout);
+                finish();
                 break;
         }
 
