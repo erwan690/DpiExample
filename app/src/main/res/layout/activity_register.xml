@@ -20,26 +20,43 @@
         android:id="@+id/scrolna"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <android.support.design.widget.TextInputEditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fullname : "
+                android:textSize="@dimen/teksna" />
+
+            <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Fullname"
             android:textSize="@dimen/teksna"/>
 
-        <android.support.design.widget.TextInputEditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place of Birth : "
+                android:textSize="@dimen/teksna" />
+
+            <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Place of Birth"
             android:textSize="@dimen/teksna"/>
 
-        <TextView
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth : "
+                android:textSize="@dimen/teksna" />
+
+            <TextView
             android:id="@+id/tanggal"
             style="@android:style/Widget.Holo.Spinner"
             android:layout_width="match_parent"
@@ -48,33 +65,71 @@
             android:hint="MM / DD / YYYY"
             android:textSize="@dimen/teksna"/>
 
-            <android.support.design.widget.TextInputEditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Address : "
+                android:textSize="@dimen/teksna" />
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:hint="Home Address"
                 android:textSize="@dimen/teksna"/>
 
-            <android.support.design.widget.TextInputEditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email : "
+                android:textSize="@dimen/teksna" />
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:hint="Email"
                 android:textSize="@dimen/teksna"/>
 
-            <android.support.design.widget.TextInputEditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cell phone : "
+                android:textSize="@dimen/teksna" />
+
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:hint="Cell phone"
                 android:textSize="@dimen/teksna"/>
 
-            <android.support.design.widget.TextInputEditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:hint="PT DPI Numbers"
+                android:text="PT DPI Numbers : "
+                android:textSize="@dimen/teksna" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
                 android:textSize="@dimen/teksna"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@android:color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/teksna" />
+
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,14 +150,16 @@
                 android:visibility="gone"/>
             </LinearLayout>
 
-        </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/submitregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="SUBMIT" />
 
-    <Button
-        android:id="@+id/submitregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="SUBMIT" />
+        </LinearLayout>
+
+
+    </ScrollView>
 </LinearLayout>
