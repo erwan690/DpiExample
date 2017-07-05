@@ -44,7 +44,6 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:id="@+id/separator"
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_alignParentTop="true"
@@ -81,7 +80,6 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:id="@+id/separator"
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_alignParentTop="true"
@@ -127,7 +125,6 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:id="@+id/separator"
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_alignParentTop="true"
@@ -164,7 +161,6 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:id="@+id/separator"
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_alignParentTop="true"
@@ -192,7 +188,6 @@
                 android:layout_height="wrap_content" />
 
             <View
-                android:id="@+id/separator"
                 android:layout_width="fill_parent"
                 android:layout_height="1dip"
                 android:layout_alignParentTop="true"
