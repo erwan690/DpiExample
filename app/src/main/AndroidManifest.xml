@@ -41,17 +41,29 @@
         <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".NotifActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".QuickActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".DpipayActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ProjectActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".LandActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".NotifActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".QuickActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DpipayActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ProjectActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LandActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailProjectActivity"
+            android:parentActivityName=".ProjectActivity" />
+        <activity
+            android:name=".SurveyProjectActivity"
+            android:parentActivityName=".DetailProjectActivity">
 
+        </activity>
     </application>
 
 </manifest>
