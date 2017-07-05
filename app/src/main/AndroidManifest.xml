@@ -51,6 +51,7 @@
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".LandActivity"
             android:parentActivityName=".MainActivity"></activity>
+
     </application>
 
 </manifest>
