@@ -30,5 +30,6 @@
     <string name="dummyhome2">Outstanding Transfer :\nRp 20.000.000</string>
     <string name="totalcom">Total commited : Rp.30000000</string>
     <string name="totaltrf">Total transfer : Rp.10000000</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
