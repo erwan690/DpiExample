@@ -62,9 +62,8 @@
             android:parentActivityName=".ProjectActivity" />
         <activity
             android:name=".SurveyProjectActivity"
-            android:parentActivityName=".DetailProjectActivity">
-
-        </activity>
+            android:parentActivityName=".DetailProjectActivity"></activity>
+        <activity android:name=".AddLandActivity"></activity>
     </application>
 
 </manifest>
