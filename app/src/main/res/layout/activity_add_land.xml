@@ -4,9 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="5dp"
     tools:context="studio.akse.dpiexample.AddLandActivity">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,19 +40,16 @@
             android:layout_height="wrap_content" />
 
         <RadioButton
-            android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="AJB" />
 
         <RadioButton
-            android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SHG" />
 
         <RadioButton
-            android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SHM" />
@@ -69,6 +69,7 @@
             android:text="Latitude" />
 
         <EditText
+            android:id="@+id/latadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -78,10 +79,40 @@
             android:text="Longitude" />
 
         <EditText
+            android:id="@+id/longadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keterangan Lain:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="save" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/mapadd"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
 
     </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>
