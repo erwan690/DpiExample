@@ -53,7 +53,6 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
-                ltnh.setVisibility(View.GONE);
 
             }
         });
