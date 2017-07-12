@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
     android:padding="4dp"
     tools:context="studio.akse.dpiexample.ForgetActivity">
 
-<LinearLayout
-    android:id="@+id/form_reset"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <android.support.design.widget.TextInputEditText
+    <LinearLayout
+        android:id="@+id/form_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:hint="Email"/>
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnreset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:layout_gravity="center"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/textresetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your email to reset password" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Reset" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/berhasil_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/resetna"
         android:textSize="@dimen/teksna"
-        android:layout_gravity="center"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
 
 </LinearLayout>
