@@ -33,6 +33,7 @@
     <string name="title_activity_maps">Map</string>
 
     <string-array name="ukuran_luas">
+        <item>Pilih Ukuran Tanah</item>
         <item>M2</item>
         <item>Ha</item>
     </string-array>

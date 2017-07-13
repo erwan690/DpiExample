@@ -24,25 +24,20 @@
             android:layout_height="wrap_content"
             android:text="Luas Tanah" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/luas_tanah"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
 
             <Spinner
                 android:id="@+id/luas_spinner"
                 style="@android:style/Widget.Holo.Light.Spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4" />
+                android:layout_height="wrap_content" />
 
-        </LinearLayout>
+        <EditText
+            android:id="@+id/luas_tanah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
 
         <TextView
             android:layout_width="match_parent"
@@ -100,20 +95,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <RadioButton
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radiojenis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/ajb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="AJB" />
 
         <RadioButton
+            android:id="@+id/shg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SHG" />
 
         <RadioButton
+            android:id="@+id/shm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SHM" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/expiredna"
+                    style="@android:style/Widget.Holo.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MM/YYYY"
+                    android:textSize="@dimen/teksna"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
