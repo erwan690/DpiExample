@@ -26,7 +26,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="dummyhome">DPI - PAY </string>
+    <string name="dummyhome">DUB - PAY </string>
     <string name="dummyhome2">Outstanding Transfer :\nRp 20.000.000</string>
     <string name="totalcom">Total commited : Rp.30000000</string>
     <string name="totaltrf">Total transfer : Rp.10000000</string>

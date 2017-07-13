@@ -14,17 +14,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Luas Tanah" />
+            android:orientation="vertical">
 
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luas Tanah" />
 
             <Spinner
                 android:id="@+id/luas_spinner"
@@ -32,266 +31,265 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/luas_tanah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Peruntukan" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckedTextView
+            <EditText
+                android:id="@+id/luas_tanah"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="Perumahan" />
+                android:visibility="gone" />
 
-            <CheckedTextView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="Bukan" />
-
-            <CheckedTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-                android:clickable="true"
-                android:gravity="center"
-                android:text="Tidak Tahu" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Harga jual per m2" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sertifikat" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:text="Peruntukan" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <RadioGroup
-                    android:id="@+id/radiojenis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/ajb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="AJB" />
-
-        <RadioButton
-            android:id="@+id/shg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SHG" />
-
-        <RadioButton
-            android:id="@+id/shm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SHM" />
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/expiredna"
-                    style="@android:style/Widget.Holo.Spinner"
+                <CheckBox
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="MM/YYYY"
-                    android:textSize="@dimen/teksna"
-                    android:visibility="gone" />
+                    android:layout_weight="3"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Perumahan" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Bukan" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Tidak Tahu" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga jual per m2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sertifikat" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radiojenis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/ajb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AJB" />
+
+                        <RadioButton
+                            android:id="@+id/shg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SHG" />
+
+                        <RadioButton
+                            android:id="@+id/shm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SHM" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/expiredna"
+                        style="@android:style/Widget.Holo.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="MM/YYYY"
+                        android:textSize="@dimen/teksna"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cara Permbayaran" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bordertable"
-            android:orientation="vertical"
-            android:padding="5dp">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="QC Luas Komersil :" />
+                android:text="Cara Permbayaran" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="QC Luas tanah per kavling :" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="QC (type) Luas Bangunan :" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="QC jumlah kavling  :" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="QC Harga Jual / Unit :" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="QC Estimasi Provit :" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kosumen Potensial" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Perumahan Yang Sudah ada Disekitar" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Selling Point" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Informasi Lainnya" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Alamat Lokasi" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Latitude" />
-
-        <EditText
-            android:id="@+id/latadd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Longitude" />
-
-        <EditText
-            android:id="@+id/longadd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Keterangan Lain:" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="save" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-
-            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/mapadd"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertable"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC Luas Komersil :" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC Luas tanah per kavling :" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC (type) Luas Bangunan :" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC jumlah kavling  :" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC Harga Jual / Unit :" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QC Estimasi Provit :" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kosumen Potensial" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perumahan Yang Sudah ada Disekitar" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selling Point" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informasi Lainnya" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat Lokasi" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude" />
+
+            <EditText
+                android:id="@+id/latadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude" />
+
+            <EditText
+                android:id="@+id/longadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan Lain:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="save" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapadd"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
 
 
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 
