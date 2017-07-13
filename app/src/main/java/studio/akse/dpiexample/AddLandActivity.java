@@ -1,12 +1,15 @@
 package studio.akse.dpiexample;
 
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,6 +25,8 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
     private EditText lat, longt, ltnh;
     private Marker marker;
     private Spinner ukrnTAnah;
+    private RadioGroup radioGroup;
+    private TextView expr;
 
 
     @Override
@@ -36,6 +41,10 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
         longt = (EditText) findViewById(R.id.longadd);
         ltnh = (EditText) findViewById(R.id.luas_tanah);
         ukrnTAnah = (Spinner) findViewById(R.id.luas_spinner);
+        radioGroup = (RadioGroup) findViewById(R.id.radiojenis);
+        expr = (TextView) findViewById(R.id.expiredna);
+
+
         // Create an ArrayAdapter using the string array and a default spinner layout
         final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.ukuran_luas, android.R.layout.simple_spinner_item);
@@ -48,6 +57,12 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
+                if (!adapterView.getSelectedItem().toString().equals("Pilih Ukuran Tanah")) {
+                    ltnh.setVisibility(View.VISIBLE);
+                } else {
+                    ltnh.setVisibility(View.GONE);
+                }
+
             }
 
             @Override
@@ -56,6 +71,22 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
 
             }
         });
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+
+                if (radioGroup.getCheckedRadioButtonId() == -1) {
+                    // no radio buttons are checked
+                } else {
+                    expr.setVisibility(View.VISIBLE);
+                    // one of the radio buttons is checked
+                }
+
+            }
+        });
+
+
 
 
 
@@ -83,6 +114,5 @@ public class AddLandActivity extends AppCompatActivity implements OnMapReadyCall
         });
 
     }
-
 
 }
